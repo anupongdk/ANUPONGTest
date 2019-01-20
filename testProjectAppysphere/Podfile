@@ -6,6 +6,9 @@ target 'testProjectAppysphere' do
   use_frameworks!
 
   # Pods for testProjectAppysphere
+	 pod 'Alamofire', '~> 4.7'
+	 pod 'SwiftEventBus'
+
 
   target 'testProjectAppysphereTests' do
     inherit! :search_paths
