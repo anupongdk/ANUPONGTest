@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftEventBus
 
 class BlogViewController: UIViewController {
 
@@ -52,12 +53,15 @@ extension BlogViewController:UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let blogCell:BlogTableViewCell = tableView.dequeueReusableCell(withIdentifier: "blogCell") as! BlogTableViewCell
         blogCell.lblTitle.text = "Title: \(blogListData?[indexPath.row].title ?? "")"
-        blogCell.lblContent.text = "\(blogListData?[indexPath.row].content ?? "")"
+        blogCell.lblContent.text = blogListData?[indexPath.row].content
         blogCell.lblCategory.text = blogListData?[indexPath.row].categories
         
         return blogCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        SwiftEventBus.post(BlogViewEvent.goDetailView)
+    }
  
 }
 

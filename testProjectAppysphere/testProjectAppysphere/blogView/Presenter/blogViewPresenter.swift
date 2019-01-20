@@ -17,6 +17,7 @@ class BlogViewPresenter: NSObject {
     
     func createViewPresenter(withView view:BlogViewController) {
         self.view = view
+        self.router.createBlogListViewModule(viewRef: view)
         registerEVB()
         
     }
@@ -28,6 +29,9 @@ class BlogViewPresenter: NSObject {
         }
         SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.loadBlogDataFail) { Notification in
             self.view?.reloadTable()
+        }
+        SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.goDetailView) { Notification in
+            self.router.gotoBlogDetailView()
         }
         
     }

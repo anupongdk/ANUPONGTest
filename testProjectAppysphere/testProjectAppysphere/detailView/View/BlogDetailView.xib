@@ -19,9 +19,50 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awk-73-fu5">
+                    <rect key="frame" x="16" y="20" width="39" height="30"/>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBr-qT-vjD">
+                    <rect key="frame" x="16" y="60" width="343" height="31.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xK9-sh-tzV">
+                    <rect key="frame" x="16" y="99" width="343" height="536"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmm-jP-ot7">
+                    <rect key="frame" x="16" y="643" width="343" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.18949002170000001" green="0.46517261640000002" blue="0.64308375630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sBr-qT-vjD" secondAttribute="trailing" constant="16" id="2n7-BK-oGx"/>
+                <constraint firstItem="Awk-73-fu5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="4ye-RS-ekR"/>
+                <constraint firstItem="sBr-qT-vjD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="9u6-0e-i3H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xK9-sh-tzV" secondAttribute="trailing" constant="16" id="M11-Cl-MEk"/>
+                <constraint firstItem="Awk-73-fu5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="UgX-cm-dWG"/>
+                <constraint firstItem="jmm-jP-ot7" firstAttribute="top" secondItem="xK9-sh-tzV" secondAttribute="bottom" constant="8" id="YXP-iN-tRj"/>
+                <constraint firstItem="xK9-sh-tzV" firstAttribute="top" secondItem="sBr-qT-vjD" secondAttribute="bottom" constant="7.5" id="ZCc-4t-eyL"/>
+                <constraint firstItem="jmm-jP-ot7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Zk2-PX-c5S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jmm-jP-ot7" secondAttribute="bottom" constant="8" id="dug-nk-DuP"/>
+                <constraint firstItem="sBr-qT-vjD" firstAttribute="top" secondItem="Awk-73-fu5" secondAttribute="bottom" constant="10" id="jEb-4M-gTZ"/>
+                <constraint firstItem="xK9-sh-tzV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nVm-rK-rSa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jmm-jP-ot7" secondAttribute="trailing" constant="16" id="sda-fH-tI9"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-547" y="337"/>
+            <point key="canvasLocation" x="-548" y="336.88155922038982"/>
         </view>
     </objects>
 </document>
