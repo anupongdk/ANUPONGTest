@@ -18,11 +18,13 @@ class BlogViewPresenter: NSObject {
     func createViewPresenter(withView view:BlogViewController) {
         self.view = view
         registerEVB()
+        
     }
     
     func registerEVB(){
         SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.loadBlogDataComplete) { Notification in
-            
+            self.view?.blogListData = self.interactor.blogData
+            self.view?.reloadTable()
         }
         SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.loadBlogDataFail) { Notification in
             self.view?.reloadTable()

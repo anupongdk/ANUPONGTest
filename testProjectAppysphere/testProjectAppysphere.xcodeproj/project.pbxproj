@@ -24,6 +24,14 @@
 		4CD9D6D821F36058004B5265 /* blogViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9D6D621F36058004B5265 /* blogViewPresenter.swift */; };
 		4CD9D6DA21F36EE9004B5265 /* blogViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9D6D921F36EE9004B5265 /* blogViewInteractor.swift */; };
 		4CD9D6DB21F36EE9004B5265 /* blogViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9D6D921F36EE9004B5265 /* blogViewInteractor.swift */; };
+		4CD9D6E021F47FC9004B5265 /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9D6DE21F47FC9004B5265 /* BlogTableViewCell.swift */; };
+		4CD9D6E121F47FC9004B5265 /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9D6DE21F47FC9004B5265 /* BlogTableViewCell.swift */; };
+		4CD9D6E221F47FC9004B5265 /* BlogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD9D6DF21F47FC9004B5265 /* BlogTableViewCell.xib */; };
+		4CD9D6E321F47FC9004B5265 /* BlogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD9D6DF21F47FC9004B5265 /* BlogTableViewCell.xib */; };
+		4CE9A88E21F4C9260082CC92 /* BlogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9A88C21F4C9260082CC92 /* BlogDetailView.swift */; };
+		4CE9A88F21F4C9260082CC92 /* BlogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE9A88C21F4C9260082CC92 /* BlogDetailView.swift */; };
+		4CE9A89021F4C9260082CC92 /* BlogDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9A88D21F4C9260082CC92 /* BlogDetailView.xib */; };
+		4CE9A89121F4C9260082CC92 /* BlogDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9A88D21F4C9260082CC92 /* BlogDetailView.xib */; };
 		65C9AE1E72D66DD57FE8F4FD /* Pods_testProjectAppysphereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4BF56AECE0C68AA96F3257 /* Pods_testProjectAppysphereTests.framework */; };
 		7715CFC93F83766461F407F5 /* Pods_testProjectAppysphereUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB13FD7992D018562231B7A /* Pods_testProjectAppysphereUITests.framework */; };
 		AFF09E487EA217929F4BDEBB /* Pods_testProjectAppysphere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD47900B7BC17BC668B2D8A /* Pods_testProjectAppysphere.framework */; };
@@ -67,6 +75,10 @@
 		4CD9D6D321F358C3004B5265 /* blogViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogViewRouter.swift; sourceTree = "<group>"; };
 		4CD9D6D621F36058004B5265 /* blogViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogViewPresenter.swift; sourceTree = "<group>"; };
 		4CD9D6D921F36EE9004B5265 /* blogViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogViewInteractor.swift; sourceTree = "<group>"; };
+		4CD9D6DE21F47FC9004B5265 /* BlogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
+		4CD9D6DF21F47FC9004B5265 /* BlogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlogTableViewCell.xib; sourceTree = "<group>"; };
+		4CE9A88C21F4C9260082CC92 /* BlogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogDetailView.swift; sourceTree = "<group>"; };
+		4CE9A88D21F4C9260082CC92 /* BlogDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlogDetailView.xib; sourceTree = "<group>"; };
 		54BFACC832D479EDC7B1CE6A /* Pods-testProjectAppysphereTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProjectAppysphereTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProjectAppysphereTests/Pods-testProjectAppysphereTests.release.xcconfig"; sourceTree = "<group>"; };
 		8FD47900B7BC17BC668B2D8A /* Pods_testProjectAppysphere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProjectAppysphere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCD496E21BC039C41DB30E0 /* Pods-testProjectAppysphereUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProjectAppysphereUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProjectAppysphereUITests/Pods-testProjectAppysphereUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +173,7 @@
 		4CD9D6C221F34CC3004B5265 /* blogView */ = {
 			isa = PBXGroup;
 			children = (
+				4CD9D6DD21F47F7E004B5265 /* blogViewCell */,
 				4CD9D6C921F352A9004B5265 /* Protocal */,
 				4CD9D6C721F34D8F004B5265 /* Presenter */,
 				4CD9D6C621F34D57004B5265 /* Router */,
@@ -214,6 +227,11 @@
 		4CD9D6C821F34DB3004B5265 /* detailView */ = {
 			isa = PBXGroup;
 			children = (
+				4CE9A88B21F4C8B00082CC92 /* Protocal */,
+				4CE9A88A21F4C88B0082CC92 /* Presenter */,
+				4CE9A88921F4C8820082CC92 /* Router */,
+				4CE9A88821F4C8700082CC92 /* Interactor */,
+				4CE9A88721F4C8260082CC92 /* View */,
 			);
 			path = detailView;
 			sourceTree = "<group>";
@@ -222,6 +240,52 @@
 			isa = PBXGroup;
 			children = (
 				4CD9D6CD21F35335004B5265 /* blogViewProtocalsEvents.swift */,
+			);
+			path = Protocal;
+			sourceTree = "<group>";
+		};
+		4CD9D6DD21F47F7E004B5265 /* blogViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4CD9D6DE21F47FC9004B5265 /* BlogTableViewCell.swift */,
+				4CD9D6DF21F47FC9004B5265 /* BlogTableViewCell.xib */,
+			);
+			path = blogViewCell;
+			sourceTree = "<group>";
+		};
+		4CE9A88721F4C8260082CC92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CE9A88C21F4C9260082CC92 /* BlogDetailView.swift */,
+				4CE9A88D21F4C9260082CC92 /* BlogDetailView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CE9A88821F4C8700082CC92 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4CE9A88921F4C8820082CC92 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4CE9A88A21F4C88B0082CC92 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4CE9A88B21F4C8B00082CC92 /* Protocal */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Protocal;
 			sourceTree = "<group>";
@@ -358,8 +422,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD9D69F21F32D05004B5265 /* LaunchScreen.storyboard in Resources */,
+				4CD9D6E221F47FC9004B5265 /* BlogTableViewCell.xib in Resources */,
 				4CD9D69C21F32D05004B5265 /* Assets.xcassets in Resources */,
 				4CD9D69A21F32D04004B5265 /* Main.storyboard in Resources */,
+				4CE9A89021F4C9260082CC92 /* BlogDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +433,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD9D6E321F47FC9004B5265 /* BlogTableViewCell.xib in Resources */,
+				4CE9A89121F4C9260082CC92 /* BlogDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,11 +546,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD9D69721F32D04004B5265 /* blogView.swift in Sources */,
+				4CD9D6E021F47FC9004B5265 /* BlogTableViewCell.swift in Sources */,
 				4CD9D6D721F36058004B5265 /* blogViewPresenter.swift in Sources */,
 				4CD9D69521F32D04004B5265 /* AppDelegate.swift in Sources */,
 				4CD9D6CE21F35335004B5265 /* blogViewProtocalsEvents.swift in Sources */,
 				4CD9D6D121F35617004B5265 /* blogData.swift in Sources */,
 				4CD9D6D421F358C3004B5265 /* blogViewRouter.swift in Sources */,
+				4CE9A88E21F4C9260082CC92 /* BlogDetailView.swift in Sources */,
 				4CD9D6DA21F36EE9004B5265 /* blogViewInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,8 +562,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD9D6CF21F35335004B5265 /* blogViewProtocalsEvents.swift in Sources */,
+				4CE9A88F21F4C9260082CC92 /* BlogDetailView.swift in Sources */,
 				4CD9D6AA21F32D05004B5265 /* testProjectAppysphereTests.swift in Sources */,
 				4CD9D6D221F35617004B5265 /* blogData.swift in Sources */,
+				4CD9D6E121F47FC9004B5265 /* BlogTableViewCell.swift in Sources */,
 				4CD9D6D821F36058004B5265 /* blogViewPresenter.swift in Sources */,
 				4CD9D6D521F358C3004B5265 /* blogViewRouter.swift in Sources */,
 				4CD9D6DB21F36EE9004B5265 /* blogViewInteractor.swift in Sources */,
@@ -671,7 +743,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Anupong..testProjectAppysphere;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anupong.testProjectAppysphere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -690,7 +762,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Anupong..testProjectAppysphere;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Anupong.testProjectAppysphere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

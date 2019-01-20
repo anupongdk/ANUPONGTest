@@ -9,13 +9,14 @@
 import Foundation
 
 class BlogViewRouter :NSObject {
-  
-    class func createBlogListViewModule(forView viewRef:BlogViewController){
-    
+    var view:BlogViewController?
+     func createBlogListViewModule(viewRef:BlogViewController){
+        self.view = viewRef
     }
     
     func gotoBlogDetailView() {
-        
+        let detailView = BlogDetailView()
+        self.view?.present(detailView, animated: true, completion: nil);
     }
     
     func gotoAddBlogView() {
