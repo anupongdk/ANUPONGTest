@@ -15,4 +15,7 @@ struct BlogViewEvent {
     static let addBlogDataFail = "EVBaddBlogDataFail"
     static let deletePlaceDataComplete = "EVBdeleteBlogDataComplete"
     static let deletePlaceDataFail = "EVBdeleteBlogDataFail"
+    
+    static let goDetailView = "EVBgotoDetailView"
+    static let goAddView = "EVBgotoAddView"
 }

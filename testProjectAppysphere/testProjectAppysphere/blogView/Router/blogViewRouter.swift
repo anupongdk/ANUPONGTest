@@ -14,8 +14,9 @@ class BlogViewRouter :NSObject {
         self.view = viewRef
     }
     
-    func gotoBlogDetailView() {
+    func gotoBlogDetailView(id:Int) {
         let detailView = BlogDetailView()
+        detailView.id = id
         self.view?.present(detailView, animated: true, completion: nil);
     }
     
