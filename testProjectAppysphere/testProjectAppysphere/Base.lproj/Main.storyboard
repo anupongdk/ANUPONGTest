@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--test-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BlogViewController" customModule="testProjectAppysphere" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="test" id="nlG-ZC-xXM"/>
+                    <navigationItem key="navigationItem" title="Title" id="SBk-zO-GWk">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="add" id="YMG-wF-7TP">
+                            <connections>
+                                <action selector="tapAddView:" destination="BYZ-38-t0r" id="97b-dJ-Vyf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mainTable" destination="2GW-8s-7Rj" id="o0H-Ch-iQ2"/>
                     </connections>

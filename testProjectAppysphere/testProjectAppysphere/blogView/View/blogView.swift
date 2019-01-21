@@ -41,6 +41,10 @@ class BlogViewController: UIViewController {
         mainTable.reloadData()
     }
     
+    @IBAction func tapAddView(_ sender: Any) {
+        print("add View")
+        self.presenter?.gotoAddView()
+    }
     
 
 }

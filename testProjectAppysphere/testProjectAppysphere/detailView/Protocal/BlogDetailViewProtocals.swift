@@ -11,4 +11,6 @@ import Foundation
 struct BlogDetailViewEvent {
   static let loadBlogDetailComplete = "EVBLoadBlogDetailComplete"
   static let loadBlogDetailFail = "EVBLoadBlogDetailFail"
+  static let deleteBlogDetailCompplete = "EVBDeleteBlogDetailCompplete"
+  static let deleteBlogDetailFail = "EVBDeleteBlogDetailFail"
 }

@@ -14,13 +14,16 @@ class addContentViewController: UIViewController {
     @IBOutlet weak var tfTitle: UITextField!
     @IBOutlet weak var tfCategory: UITextField!
     @IBOutlet weak var tvContent: UITextView!
-    
     @IBOutlet weak var constAvoidKeyboard: NSLayoutConstraint!
+    
+    var presenter :AddContentViewPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter = AddContentViewPresenter()
+        self.presenter?.createPresenter(withView: self)
         bindingUI()
-    
+
         
         // Do any additional setup after loading the view.
     }
@@ -46,12 +49,24 @@ class addContentViewController: UIViewController {
     
     
     @IBAction func tapClose(_ sender: Any) {
-        
+       presenter?.goBack()
     }
     
     @IBAction func tapUpload(_ sender: Any) {
+
+        var dic: [String: Any] {
+            return [
+                "id" : 0,
+                "title" : self.tfTitle.text ?? "",
+                "categories" : self.tfCategory.text ?? "",
+                "content" : self.tvContent.text ?? ""
+            ]
+        }
         
+        let blogData = Blog(dic: dic)
+        presenter?.upload(with:blogData)
     }
+    
     /*
     // MARK: - Navigation
 

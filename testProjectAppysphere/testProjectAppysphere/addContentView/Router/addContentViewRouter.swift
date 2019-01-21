@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class addContentViewRouter: NSObject {
+    var view:addContentViewController?
+    func createRouter(withView view:addContentViewController) {
+        self.view = view
+    }
+    func goBack() {
+        self.view?.dismiss(animated: true, completion: nil)
+    }
+}

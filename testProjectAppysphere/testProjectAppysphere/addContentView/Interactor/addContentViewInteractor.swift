@@ -13,9 +13,14 @@ import Alamofire
 class addContentViewInteractor: NSObject {
     var blogData:Blog?
     func postBlogData(With Blog:Blog) {
-        Alamofire.request("http://reduxblog.herokuapp.com/api/posts/",method: .post).responseJSON { response in
-            if let result = response.result.value {
-                SwiftEventBus.post(BlogDetailViewEvent.loadBlogDetailComplete)
+        
+//        let param = ["id":"1234","content":"aaaaa","categories":"aaa","title":"title"]
+        let param = Blog.asDictionary
+        Alamofire.request("http://reduxblog.herokuapp.com/api/posts",method: .post,parameters: param ).responseJSON { response in
+
+            
+            if response.result.isSuccess {
+                 SwiftEventBus.post(AddContentEvent.postContentComplete)
             }
         }
         
