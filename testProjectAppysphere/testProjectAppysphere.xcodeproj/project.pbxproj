@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C9A594D21F5A0B30020B4F1 /* addContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A594B21F5A0B30020B4F1 /* addContentViewController.swift */; };
+		4C9A594E21F5A0B30020B4F1 /* addContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A594B21F5A0B30020B4F1 /* addContentViewController.swift */; };
+		4C9A594F21F5A0B30020B4F1 /* addContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A594C21F5A0B30020B4F1 /* addContentViewController.xib */; };
+		4C9A595021F5A0B30020B4F1 /* addContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9A594C21F5A0B30020B4F1 /* addContentViewController.xib */; };
+		4C9A595221F5A0CE0020B4F1 /* addContentViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595121F5A0CE0020B4F1 /* addContentViewPresenter.swift */; };
+		4C9A595321F5A0CE0020B4F1 /* addContentViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595121F5A0CE0020B4F1 /* addContentViewPresenter.swift */; };
+		4C9A595521F5A0E20020B4F1 /* addContentViewProtocals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595421F5A0E20020B4F1 /* addContentViewProtocals.swift */; };
+		4C9A595621F5A0E20020B4F1 /* addContentViewProtocals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595421F5A0E20020B4F1 /* addContentViewProtocals.swift */; };
+		4C9A595821F5A0FE0020B4F1 /* addContentViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595721F5A0FE0020B4F1 /* addContentViewRouter.swift */; };
+		4C9A595921F5A0FE0020B4F1 /* addContentViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595721F5A0FE0020B4F1 /* addContentViewRouter.swift */; };
+		4C9A595B21F5A1190020B4F1 /* addContentViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595A21F5A1190020B4F1 /* addContentViewInteractor.swift */; };
+		4C9A595C21F5A1190020B4F1 /* addContentViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595A21F5A1190020B4F1 /* addContentViewInteractor.swift */; };
+		4C9A595F21F5AE9C0020B4F1 /* UIextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595E21F5AE9C0020B4F1 /* UIextension.swift */; };
+		4C9A596021F5AE9C0020B4F1 /* UIextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A595E21F5AE9C0020B4F1 /* UIextension.swift */; };
 		4CD9D69521F32D04004B5265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9D69421F32D04004B5265 /* AppDelegate.swift */; };
 		4CD9D69721F32D04004B5265 /* blogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9D69621F32D04004B5265 /* blogView.swift */; };
 		4CD9D69A21F32D04004B5265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD9D69821F32D04004B5265 /* Main.storyboard */; };
@@ -65,6 +79,13 @@
 /* Begin PBXFileReference section */
 		28E7E577A7F88AC33D0FF6B0 /* Pods-testProjectAppysphere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProjectAppysphere.release.xcconfig"; path = "Pods/Target Support Files/Pods-testProjectAppysphere/Pods-testProjectAppysphere.release.xcconfig"; sourceTree = "<group>"; };
 		383C49AA9378AE9776920374 /* Pods-testProjectAppysphere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProjectAppysphere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testProjectAppysphere/Pods-testProjectAppysphere.debug.xcconfig"; sourceTree = "<group>"; };
+		4C9A594B21F5A0B30020B4F1 /* addContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addContentViewController.swift; sourceTree = "<group>"; };
+		4C9A594C21F5A0B30020B4F1 /* addContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = addContentViewController.xib; sourceTree = "<group>"; };
+		4C9A595121F5A0CE0020B4F1 /* addContentViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addContentViewPresenter.swift; sourceTree = "<group>"; };
+		4C9A595421F5A0E20020B4F1 /* addContentViewProtocals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addContentViewProtocals.swift; sourceTree = "<group>"; };
+		4C9A595721F5A0FE0020B4F1 /* addContentViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addContentViewRouter.swift; sourceTree = "<group>"; };
+		4C9A595A21F5A1190020B4F1 /* addContentViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addContentViewInteractor.swift; sourceTree = "<group>"; };
+		4C9A595E21F5AE9C0020B4F1 /* UIextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIextension.swift; sourceTree = "<group>"; };
 		4CD9D69121F32D04004B5265 /* testProjectAppysphere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProjectAppysphere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD9D69421F32D04004B5265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD9D69621F32D04004B5265 /* blogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blogView.swift; sourceTree = "<group>"; };
@@ -128,6 +149,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C9A594521F5A0490020B4F1 /* addContentView */ = {
+			isa = PBXGroup;
+			children = (
+				4C9A594A21F5A0800020B4F1 /* Interactor */,
+				4C9A594921F5A0790020B4F1 /* Router */,
+				4C9A594821F5A06E0020B4F1 /* Protocal */,
+				4C9A594721F5A0650020B4F1 /* Presenter */,
+				4C9A594621F5A05C0020B4F1 /* View */,
+			);
+			path = addContentView;
+			sourceTree = "<group>";
+		};
+		4C9A594621F5A05C0020B4F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C9A594B21F5A0B30020B4F1 /* addContentViewController.swift */,
+				4C9A594C21F5A0B30020B4F1 /* addContentViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C9A594721F5A0650020B4F1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4C9A595121F5A0CE0020B4F1 /* addContentViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4C9A594821F5A06E0020B4F1 /* Protocal */ = {
+			isa = PBXGroup;
+			children = (
+				4C9A595421F5A0E20020B4F1 /* addContentViewProtocals.swift */,
+			);
+			path = Protocal;
+			sourceTree = "<group>";
+		};
+		4C9A594921F5A0790020B4F1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4C9A595721F5A0FE0020B4F1 /* addContentViewRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4C9A594A21F5A0800020B4F1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4C9A595A21F5A1190020B4F1 /* addContentViewInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4C9A595D21F5AE790020B4F1 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4C9A595E21F5AE9C0020B4F1 /* UIextension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		4CD9D68821F32D04004B5265 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +235,8 @@
 		4CD9D69321F32D04004B5265 /* testProjectAppysphere */ = {
 			isa = PBXGroup;
 			children = (
+				4C9A595D21F5AE790020B4F1 /* extension */,
+				4C9A594521F5A0490020B4F1 /* addContentView */,
 				4CD9D6C821F34DB3004B5265 /* detailView */,
 				4CD9D6C221F34CC3004B5265 /* blogView */,
 				4CD9D69421F32D04004B5265 /* AppDelegate.swift */,
@@ -437,6 +521,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9A594F21F5A0B30020B4F1 /* addContentViewController.xib in Resources */,
 				4CD9D69F21F32D05004B5265 /* LaunchScreen.storyboard in Resources */,
 				4CD9D6E221F47FC9004B5265 /* BlogTableViewCell.xib in Resources */,
 				4CD9D69C21F32D05004B5265 /* Assets.xcassets in Resources */,
@@ -449,6 +534,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9A595021F5A0B30020B4F1 /* addContentViewController.xib in Resources */,
 				4CD9D6E321F47FC9004B5265 /* BlogTableViewCell.xib in Resources */,
 				4CE9A89121F4C9260082CC92 /* BlogDetailView.xib in Resources */,
 			);
@@ -564,15 +650,21 @@
 				4CD9D69721F32D04004B5265 /* blogView.swift in Sources */,
 				4CD9D6E021F47FC9004B5265 /* BlogTableViewCell.swift in Sources */,
 				4CD9D6D721F36058004B5265 /* blogViewPresenter.swift in Sources */,
+				4C9A595F21F5AE9C0020B4F1 /* UIextension.swift in Sources */,
+				4C9A595221F5A0CE0020B4F1 /* addContentViewPresenter.swift in Sources */,
 				4CD9D69521F32D04004B5265 /* AppDelegate.swift in Sources */,
+				4C9A595B21F5A1190020B4F1 /* addContentViewInteractor.swift in Sources */,
 				4CE9A8A521F4D8B10082CC92 /* BlogDetailViewRouter.swift in Sources */,
 				4CD9D6CE21F35335004B5265 /* blogViewProtocalsEvents.swift in Sources */,
 				4CE9A8A221F4D8960082CC92 /* BlogDetailViewProtocals.swift in Sources */,
+				4C9A595821F5A0FE0020B4F1 /* addContentViewRouter.swift in Sources */,
 				4CE9A8A821F4D8CA0082CC92 /* BlogDetailViewInteractor.swift in Sources */,
 				4CD9D6D121F35617004B5265 /* blogData.swift in Sources */,
 				4CD9D6D421F358C3004B5265 /* blogViewRouter.swift in Sources */,
+				4C9A594D21F5A0B30020B4F1 /* addContentViewController.swift in Sources */,
 				4CE9A88E21F4C9260082CC92 /* BlogDetailView.swift in Sources */,
 				4CE9A89F21F4D87F0082CC92 /* BlogDetailViewPresenter.swift in Sources */,
+				4C9A595521F5A0E20020B4F1 /* addContentViewProtocals.swift in Sources */,
 				4CD9D6DA21F36EE9004B5265 /* blogViewInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,15 +674,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD9D6CF21F35335004B5265 /* blogViewProtocalsEvents.swift in Sources */,
+				4C9A595621F5A0E20020B4F1 /* addContentViewProtocals.swift in Sources */,
 				4CE9A8A321F4D8960082CC92 /* BlogDetailViewProtocals.swift in Sources */,
 				4CE9A88F21F4C9260082CC92 /* BlogDetailView.swift in Sources */,
+				4C9A594E21F5A0B30020B4F1 /* addContentViewController.swift in Sources */,
+				4C9A595921F5A0FE0020B4F1 /* addContentViewRouter.swift in Sources */,
+				4C9A595C21F5A1190020B4F1 /* addContentViewInteractor.swift in Sources */,
 				4CD9D6AA21F32D05004B5265 /* testProjectAppysphereTests.swift in Sources */,
 				4CD9D6D221F35617004B5265 /* blogData.swift in Sources */,
 				4CD9D6E121F47FC9004B5265 /* BlogTableViewCell.swift in Sources */,
+				4C9A595321F5A0CE0020B4F1 /* addContentViewPresenter.swift in Sources */,
 				4CE9A8A021F4D87F0082CC92 /* BlogDetailViewPresenter.swift in Sources */,
 				4CD9D6D821F36058004B5265 /* blogViewPresenter.swift in Sources */,
 				4CD9D6D521F358C3004B5265 /* blogViewRouter.swift in Sources */,
 				4CD9D6DB21F36EE9004B5265 /* blogViewInteractor.swift in Sources */,
+				4C9A596021F5AE9C0020B4F1 /* UIextension.swift in Sources */,
 				4CE9A8A921F4D8CA0082CC92 /* BlogDetailViewInteractor.swift in Sources */,
 				4CE9A8A621F4D8B10082CC92 /* BlogDetailViewRouter.swift in Sources */,
 			);
