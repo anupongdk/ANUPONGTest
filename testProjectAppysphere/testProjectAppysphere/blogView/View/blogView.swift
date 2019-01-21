@@ -33,6 +33,7 @@ class BlogViewController: UIViewController {
         mainTable.register(UINib(nibName: "BlogTableViewCell", bundle: nil), forCellReuseIdentifier: "blogCell")
         mainTable.rowHeight = UITableView.automaticDimension
         mainTable.estimatedRowHeight = UITableView.automaticDimension
+        mainTable.tableFooterView = UIView()
         mainTable.reloadData()
     }
     

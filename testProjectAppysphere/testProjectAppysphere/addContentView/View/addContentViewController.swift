@@ -56,7 +56,7 @@ class addContentViewController: UIViewController {
 
         var dic: [String: Any] {
             return [
-                "id" : 0,
+                "id" : Int.random(in: 0 ..< 1000000),
                 "title" : self.tfTitle.text ?? "",
                 "categories" : self.tfCategory.text ?? "",
                 "content" : self.tvContent.text ?? ""
