@@ -20,4 +20,13 @@ struct Blog {
         self.categories = dic["categories"] as? String ?? ""
         self.content = dic["content"] as? String ?? ""
     }
+    
+    var asDictionary: [String: Any] {
+        return [
+            "id" : self.id,
+            "title" : self.title,
+            "categories" : self.categories,
+            "content" : self.content
+        ]
+    }
 }

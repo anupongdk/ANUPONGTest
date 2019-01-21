@@ -21,7 +21,8 @@ class BlogViewRouter :NSObject {
     }
     
     func gotoAddBlogView() {
-        
+        let addView = addContentViewController()
+        self.view?.present(addView, animated: true, completion: nil);
     }
 }
 

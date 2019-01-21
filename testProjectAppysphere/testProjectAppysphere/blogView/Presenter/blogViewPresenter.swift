@@ -25,16 +25,29 @@ class BlogViewPresenter: NSObject {
     func registerEVB(){
         SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.loadBlogDataComplete) { Notification in
             self.view?.blogListData = self.interactor.blogData
-            self.view?.reloadTable()
+            self.view!.reloadTable()
         }
         SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.loadBlogDataFail) { Notification in
             self.view?.reloadTable()
         }
 
+        SwiftEventBus.onMainThread(self, name: AddContentEvent.postContentComplete) { Notification in
+            self.loadData()
+        }
+        
+        SwiftEventBus.onMainThread(self, name: BlogDetailViewEvent.deleteBlogDetailCompplete) { Notification in
+            self.loadData()
+        }
+        
+        
     }
     
     func gotoViewDetail(id:Int) {
         self.router.gotoBlogDetailView(id: id)
+    }
+    
+    func gotoAddView() {
+        self.router.gotoAddBlogView()
     }
     
     
