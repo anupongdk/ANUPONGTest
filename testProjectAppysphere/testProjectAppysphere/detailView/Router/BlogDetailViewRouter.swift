@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class BlogDetailViewRouter:NSObject{
+    var view:BlogDetailView?
+    
+    func createBlogDetailViewRouter(with view:BlogDetailView){
+        self.view = view
+    }
+    func  goBack() {
+        self.view?.dismiss(animated: true, completion: nil)
+    }
+}

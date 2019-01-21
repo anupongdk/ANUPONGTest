@@ -30,11 +30,13 @@ class BlogViewPresenter: NSObject {
         SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.loadBlogDataFail) { Notification in
             self.view?.reloadTable()
         }
-        SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.goDetailView) { Notification in
-            self.router.gotoBlogDetailView()
-        }
-        
+
     }
+    
+    func gotoViewDetail(id:Int) {
+        self.router.gotoBlogDetailView(id: id)
+    }
+    
     
     func loadData()  {
         interactor.getBlogData()

@@ -10,13 +10,31 @@ import UIKit
 
 class BlogDetailView: UIViewController {
 
+    var id:Int?
+    var blogData:Blog?
+    var presenter:BlogDetailViewPresenter?
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var tvContent: UITextView!
+    @IBOutlet weak var lblCategory: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        presenter = BlogDetailViewPresenter()
+        presenter?.createViewPresenter(withView: self)
     }
 
+    func bindingUI() {
+        lblTitle.text = blogData?.title
+        tvContent.text = blogData?.content
+        lblCategory.text = blogData?.categories
+    }
 
+    @IBAction func tapClose(_ sender: Any) {
+        presenter?.goBack()
+    }
+    
     /*
     // MARK: - Navigation
 

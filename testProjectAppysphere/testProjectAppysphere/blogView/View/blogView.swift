@@ -60,7 +60,7 @@ extension BlogViewController:UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        SwiftEventBus.post(BlogViewEvent.goDetailView)
+        self.presenter?.gotoViewDetail(id: blogListData?[indexPath.row].id ?? 0)
     }
  
 }
