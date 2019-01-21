@@ -17,7 +17,7 @@ class BlogViewInteractor: NSObject {
         Alamofire.request("http://reduxblog.herokuapp.com/api/posts",method: .get,parameters: param).responseJSON { response in
             if let result = response.result.value {
                 let jsonData = result as! [NSDictionary]
-                
+                self.blogData = [Blog]()
                 for  dic in jsonData{
                     let blog = Blog(dic: dic as! [String : Any])
                     self.blogData.append(blog)

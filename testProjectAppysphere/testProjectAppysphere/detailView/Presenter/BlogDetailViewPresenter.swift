@@ -31,10 +31,22 @@ class BlogDetailViewPresenter: NSObject {
             self.view?.blogData = self.interactor.blogData
              self.view?.bindingUI()
             }
+        
+        SwiftEventBus.onMainThread(interactor, name: BlogDetailViewEvent.loadBlogDetailFail) { Notification in
+            self.goBack()
+        }
+        
+        SwiftEventBus.onMainThread(interactor, name: BlogDetailViewEvent.deleteBlogDetailCompplete) { Notification in
+            self.goBack()
+        }
     }
     
     func goBack() {
         self.router.goBack()
+    }
+    
+    func deletePost(id:Int){
+        self.interactor.deleteBlogData(At: id)
     }
     
 }

@@ -23,7 +23,7 @@ class BlogDetailViewInteractor: NSObject {
     }
     
     func deleteBlogData(At id:Int) {
-        Alamofire.request("http://reduxblog.herokuapp.com/api/posts/\(id)",method: .get).responseJSON { response in
+        Alamofire.request("http://reduxblog.herokuapp.com/api/posts/\(id)",method: .delete).responseJSON { response in
             if response.result.isSuccess{
                 SwiftEventBus.post(BlogDetailViewEvent.deleteBlogDetailCompplete)
             }

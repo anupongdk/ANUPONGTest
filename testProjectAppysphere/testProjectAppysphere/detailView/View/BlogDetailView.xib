@@ -51,6 +51,15 @@
                     <color key="textColor" red="0.18949002170000001" green="0.46517261640000002" blue="0.64308375630000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqk-kE-NDA">
+                    <rect key="frame" x="251" y="22" width="108" height="30"/>
+                    <state key="normal" title="Delete this Post">
+                        <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tapDelete:" destination="-1" eventType="touchUpInside" id="f1W-Wg-pna"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -62,10 +71,12 @@
                 <constraint firstItem="jmm-jP-ot7" firstAttribute="top" secondItem="xK9-sh-tzV" secondAttribute="bottom" constant="8" id="YXP-iN-tRj"/>
                 <constraint firstItem="xK9-sh-tzV" firstAttribute="top" secondItem="sBr-qT-vjD" secondAttribute="bottom" constant="7.5" id="ZCc-4t-eyL"/>
                 <constraint firstItem="jmm-jP-ot7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Zk2-PX-c5S"/>
+                <constraint firstItem="Uqk-kE-NDA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="2" id="b5E-Gw-Afk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jmm-jP-ot7" secondAttribute="bottom" constant="8" id="dug-nk-DuP"/>
                 <constraint firstItem="sBr-qT-vjD" firstAttribute="top" secondItem="Awk-73-fu5" secondAttribute="bottom" constant="10" id="jEb-4M-gTZ"/>
                 <constraint firstItem="xK9-sh-tzV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nVm-rK-rSa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jmm-jP-ot7" secondAttribute="trailing" constant="16" id="sda-fH-tI9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uqk-kE-NDA" secondAttribute="trailing" constant="16" id="wIp-9Y-9Cc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-548" y="336.88155922038982"/>

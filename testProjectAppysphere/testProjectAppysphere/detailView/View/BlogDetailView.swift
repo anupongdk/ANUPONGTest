@@ -35,6 +35,9 @@ class BlogDetailView: UIViewController {
         presenter?.goBack()
     }
     
+    @IBAction func tapDelete(_ sender: Any) {
+        presenter?.deletePost(id: self.id ?? 0)
+    }
     /*
     // MARK: - Navigation
 

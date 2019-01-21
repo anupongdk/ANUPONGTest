@@ -25,7 +25,7 @@ class BlogViewPresenter: NSObject {
     func registerEVB(){
         SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.loadBlogDataComplete) { Notification in
             self.view?.blogListData = self.interactor.blogData
-            self.view?.reloadTable()
+            self.view!.reloadTable()
         }
         SwiftEventBus.onMainThread(interactor, name: BlogViewEvent.loadBlogDataFail) { Notification in
             self.view?.reloadTable()

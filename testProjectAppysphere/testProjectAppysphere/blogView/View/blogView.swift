@@ -38,7 +38,9 @@ class BlogViewController: UIViewController {
     
     
     func reloadTable() {
-        mainTable.reloadData()
+            mainTable.reloadData()
+        
+        
     }
     
     @IBAction func tapAddView(_ sender: Any) {
